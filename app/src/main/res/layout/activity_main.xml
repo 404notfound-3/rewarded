@@ -1,0 +1,71 @@
+<?xml version=  "1.0" encoding=  "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- vertical linear layout with 2  button -->
+
+    <LinearLayout
+        android:layout_width= "match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_centerInParent= "true"
+        android:layout_margin= "16dp"
+        android:orientation= "vertical"
+        tools:ignore="UselessParent">
+
+        <!-- Simple Buttons to Load Rewarded Ad when clicked -->
+        <Button
+            android:id= "@+id/loadRewardedBtn"
+            android:layout_width= "match_parent"
+            android:layout_height= "60dp"
+            android:layout_margin= "16dp"
+            android:background= "#32a852"
+            android:fontFamily= "serif"
+            android:text= "@string/load_rewarded_ad"
+            android:textColor= "#ffffff"
+            android:textSize= "24sp"
+            android:textStyle= "bold"/>
+
+        <!-- Simple Buttons to Show  Rewarded Ad if is is loaded when clicked -->
+        <Button
+            android:id= "@+id/showRewardedBtn"
+            android:layout_width= "match_parent"
+            android:layout_height= "60dp"
+            android:layout_margin= "16dp"
+            android:background= "#32a852"
+            android:fontFamily= "serif"
+            android:text= "@string/show_rewarded_ad"
+            android:textColor= "#ffffff"
+            android:textSize= "24sp"
+            android:textStyle= "bold"/>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="4dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9591247605621401/9135108395"></com.google.android.gms.ads.AdView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="46dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9591247605621401/4939824466"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

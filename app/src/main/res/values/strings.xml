@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rewards</string>
+    <string name="load_rewarded_ad">Load Rewarded Ad</string>
+    <string name="show_rewarded_ad">Show Rewarded Ad</string>
+</resources>
