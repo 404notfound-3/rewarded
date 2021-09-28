@@ -62,10 +62,22 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="47dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="46dp"
+        android:layout_marginEnd="45dp"
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-9591247605621401/4939824466"></com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="75dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="666dp"
+        android:text="Quit" />
 
 </RelativeLayout>

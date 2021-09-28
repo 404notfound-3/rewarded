@@ -1,6 +1,8 @@
 package com.rahul.rewards;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 //library for Button, View and Toast
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     //creating Object of Buttons
     private Button loadAdBtn;
     private Button showAdBtn;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         // Initializing the Button  objects to their respective views from activity_main.xml file
         loadAdBtn = (Button) findViewById(R.id.loadRewardedBtn);
         showAdBtn = (Button) findViewById(R.id.showRewardedBtn);
+        button = (Button) findViewById(R.id.button);
 
         //OnClickListener listeners for loadAdBtn and showAdBtn buttons
         loadAdBtn.setOnClickListener(new View.OnClickListener() {@Override
@@ -78,6 +82,14 @@ public class MainActivity extends AppCompatActivity {
             //calling the showRewardedAd method to show the Rewarded Ad
             showRewardedAd();
         }
+        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
         });
 
         // creating  RewardedAdLoadCallback for Rewarded Ad with some 2 Override methods
