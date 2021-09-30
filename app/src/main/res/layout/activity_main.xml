@@ -8,6 +8,43 @@
 
     <!-- vertical linear layout with 2  button -->
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="45dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9591247605621401/4939824466"></com.google.android.gms.ads.AdView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="104dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9591247605621401/6889553508"></com.google.android.gms.ads.AdView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="53dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9591247605621401/7955223160"></com.google.android.gms.ads.AdView>
+
     <LinearLayout
         android:layout_width= "match_parent"
         android:layout_height= "wrap_content"
@@ -17,30 +54,40 @@
         tools:ignore="UselessParent">
 
         <!-- Simple Buttons to Load Rewarded Ad when clicked -->
-        <Button
-            android:id= "@+id/loadRewardedBtn"
-            android:layout_width= "match_parent"
-            android:layout_height= "60dp"
-            android:layout_margin= "16dp"
-            android:background= "#32a852"
-            android:fontFamily= "serif"
-            android:text= "@string/load_rewarded_ad"
-            android:textColor= "#ffffff"
-            android:textSize= "24sp"
-            android:textStyle= "bold"/>
 
         <!-- Simple Buttons to Show  Rewarded Ad if is is loaded when clicked -->
+
         <Button
-            android:id= "@+id/showRewardedBtn"
-            android:layout_width= "match_parent"
-            android:layout_height= "60dp"
-            android:layout_margin= "16dp"
-            android:background= "#32a852"
-            android:fontFamily= "serif"
-            android:text= "@string/show_rewarded_ad"
-            android:textColor= "#ffffff"
-            android:textSize= "24sp"
-            android:textStyle= "bold"/>
+            android:id="@+id/loadRewardedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:background="#32a852"
+            android:fontFamily="serif"
+            android:text="@string/load_rewarded_ad"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:text="Quit" />
+
+        <Button
+            android:id="@+id/showRewardedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="0dp"
+            android:background="#32a852"
+            android:fontFamily="serif"
+            android:text="@string/show_rewarded_ad"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
     <com.google.android.gms.ads.AdView
@@ -60,24 +107,26 @@
         android:id="@+id/adView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/adView12"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="47dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="45dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="44dp"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-9591247605621401/4939824466"></com.google.android.gms.ads.AdView>
+        ads:adUnitId="ca-app-pub-9591247605621401/7901718087"></com.google.android.gms.ads.AdView>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="75dp"
-        android:layout_height="46dp"
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adView2"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="170dp"
-        android:layout_marginEnd="166dp"
-        android:layout_marginBottom="666dp"
-        android:text="Quit" />
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="45dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9591247605621401/7710146395"></com.google.android.gms.ads.AdView>
 
 </RelativeLayout>
